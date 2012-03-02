@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SampleApp</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
+  <style type="text/css">
+    body{
+      background-color:rgb(0,0,0);
+      color:rgb(255,0,0);
+        }
+  </style>  
+  <title>
+    Ruby on Rails Tutorial Sample App | <%= @title %>
+  </title>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
 <%= yield %>
-
 </body>
 </html>
